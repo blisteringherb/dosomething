@@ -44,16 +44,16 @@ function dosomething_fact_page_strongarm() {
           'weight' => '7',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '6',
         ),
         'metatags' => array(
-          'weight' => '8',
+          'weight' => '7',
         ),
         'redirect' => array(
-          'weight' => '9',
+          'weight' => '8',
         ),
         'xmlsitemap' => array(
-          'weight' => '10',
+          'weight' => '9',
         ),
       ),
       'display' => array(),

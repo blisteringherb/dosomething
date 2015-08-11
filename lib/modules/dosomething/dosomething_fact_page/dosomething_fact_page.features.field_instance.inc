@@ -229,7 +229,7 @@ You can use [link] to link to the Campaign selected in the Campaign field, e.g. 
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 6,
+      'weight' => 4,
     ),
   );
 
@@ -436,6 +436,52 @@ You can use [link] to link to the Campaign selected in the Campaign field, e.g. 
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-fact_page-field_region'
+  $field_instances['node-fact_page-field_region'] = array(
+    'bundle' => 'fact_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select "Global" if this fact page should show up in search results for all users. Otherwise, select the countries to which this fact page applies.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 16,
+      ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_region',
+    'label' => 'Region',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
       'weight' => 5,
     ),
   );
@@ -502,6 +548,8 @@ You can use [link] to link to the Campaign selected in the Campaign field, e.g. 
 
 You can use [link] to link to the Campaign selected in the Campaign field, e.g. <em>Want to find out more? Sign up for [link] today!</em>');
   t('Primary Cause');
+  t('Region');
+  t('Select "Global" if this fact page should show up in search results for all users. Otherwise, select the countries to which this fact page applies.');
   t('Select the Fact to display.');
   t('Subtitle');
   t('Use an internal URL such as <em>node/711</em> or <em>campaigns</em>.  

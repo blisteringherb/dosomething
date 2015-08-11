@@ -31,7 +31,10 @@ function dosomething_static_content_user_default_permissions() {
   // Exported permission: 'delete own static_content content'.
   $permissions['delete own static_content content'] = array(
     'name' => 'delete own static_content content',
-    'roles' => array(),
+    'roles' => array(
+      'brazil admin' => 'brazil admin',
+      'mexico admin' => 'mexico admin',
+    ),
     'module' => 'node',
   );
 

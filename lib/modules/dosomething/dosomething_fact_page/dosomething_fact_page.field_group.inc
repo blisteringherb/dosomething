@@ -21,7 +21,7 @@ function dosomething_fact_page_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Call to Action',
-    'weight' => '4',
+    'weight' => '2',
     'children' => array(
       0 => 'field_call_to_action',
       1 => 'field_cta_link',
@@ -50,11 +50,10 @@ function dosomething_fact_page_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Facts',
-    'weight' => '2',
+    'weight' => '1',
     'children' => array(
-      0 => 'field_facts',
-      1 => 'field_intro_image',
-      2 => 'field_fact_collection',
+      0 => 'field_intro_image',
+      1 => 'field_fact_collection',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

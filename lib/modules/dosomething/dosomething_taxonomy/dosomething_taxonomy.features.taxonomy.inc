@@ -57,6 +57,14 @@ function dosomething_taxonomy_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'region' => array(
+      'name' => 'Region',
+      'machine_name' => 'region',
+      'description' => 'The country or region to which this content applies.',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'tags' => array(
       'name' => 'Tags',
       'machine_name' => 'tags',

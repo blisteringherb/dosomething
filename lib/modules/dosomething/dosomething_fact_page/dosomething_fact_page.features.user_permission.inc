@@ -14,7 +14,9 @@ function dosomething_fact_page_user_default_permissions() {
   $permissions['create fact_page content'] = array(
     'name' => 'create fact_page content',
     'roles' => array(
+      'brazil admin' => 'brazil admin',
       'editor' => 'editor',
+      'mexico admin' => 'mexico admin',
     ),
     'module' => 'node',
   );
@@ -29,7 +31,10 @@ function dosomething_fact_page_user_default_permissions() {
   // Exported permission: 'delete own fact_page content'.
   $permissions['delete own fact_page content'] = array(
     'name' => 'delete own fact_page content',
-    'roles' => array(),
+    'roles' => array(
+      'brazil admin' => 'brazil admin',
+      'mexico admin' => 'mexico admin',
+    ),
     'module' => 'node',
   );
 
@@ -46,7 +51,9 @@ function dosomething_fact_page_user_default_permissions() {
   $permissions['edit own fact_page content'] = array(
     'name' => 'edit own fact_page content',
     'roles' => array(
+      'brazil admin' => 'brazil admin',
       'editor' => 'editor',
+      'mexico admin' => 'mexico admin',
     ),
     'module' => 'node',
   );

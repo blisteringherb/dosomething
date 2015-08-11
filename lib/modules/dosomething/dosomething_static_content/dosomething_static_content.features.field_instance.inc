@@ -915,6 +915,52 @@ function dosomething_static_content_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-static_content-field_region'
+  $field_instances['node-static_content-field_region'] = array(
+    'bundle' => 'static_content',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 18,
+      ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_region',
+    'label' => 'Region',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 8,
+    ),
+  );
+
   // Exported field_instance: 'node-static_content-field_subtitle'
   $field_instances['node-static_content-field_subtitle'] = array(
     'bundle' => 'static_content',
@@ -1036,6 +1082,7 @@ function dosomething_static_content_field_default_field_instances() {
   t('Intro Image');
   t('Intro Title');
   t('Provider');
+  t('Region');
   t('Sponsors and Partners');
   t('Subtitle');
   t('The ID of the Youtube video <strong> (comes after the ?v=) </strong>');

@@ -393,7 +393,7 @@ function dosomething_campaign_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 14,
+      'weight' => 15,
     ),
   );
 
@@ -739,7 +739,7 @@ function dosomething_campaign_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 17,
+      'weight' => 18,
     ),
   );
 
@@ -2229,6 +2229,52 @@ function dosomething_campaign_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-campaign-field_region'
+  $field_instances['node-campaign-field_region'] = array(
+    'bundle' => 'campaign',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select "Global" if the campaign applies to all countries and locales.  Otherwise, select the country to which this campaign applies.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 75,
+      ),
+      'search_index' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_region',
+    'label' => 'Region',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 14,
+    ),
+  );
+
   // Exported field_instance: 'node-campaign-field_reportback_confirm_msg'
   $field_instances['node-campaign-field_reportback_confirm_msg'] = array(
     'bundle' => 'campaign',
@@ -2668,7 +2714,7 @@ function dosomething_campaign_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 15,
+      'weight' => 16,
     ),
   );
 
@@ -3196,12 +3242,14 @@ function dosomething_campaign_field_default_field_instances() {
   t('Problem Fact');
   t('Proof of Impact');
   t('Question');
+  t('Region');
   t('Report Back Confirmation Sentence');
   t('Report Back Copy');
   t('Report Back Noun');
   t('Report Back Verb');
   t('Scholarship Amount');
   t('Secondary Call to Action');
+  t('Select "Global" if the campaign applies to all countries and locales.  Otherwise, select the country to which this campaign applies.');
   t('Select the user who created this campaign.');
   t('Sentence user sees after reporting back. I.e. You kicked ass making birthday cards for children in need.
 <br/>
